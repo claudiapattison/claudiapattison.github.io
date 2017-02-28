@@ -1,0 +1,77 @@
+.row {width:100%; overflow:hidden;}
+
+[class^="column-"], [class*=" column-"]{@include span(12);}
+
+.column-1 {
+
+	@include screen-size(medium-screens) {@include span(1);}
+}
+
+.column-2 {
+
+	@include screen-size(medium-screens) {@include span(2);}
+}
+
+.column-2-5 {
+
+	@include screen-size(medium-screens) {@include span(2.5);}
+}
+
+
+.column-3 {
+
+	@include screen-size(medium-screens) {@include span(3);}
+}
+
+.column-4 {
+
+	@include screen-size(medium-screens) {@include span(4);}
+}
+
+.column-5 {
+
+	@include screen-size(medium-screens) {@include span(5);}
+}
+
+.column-6 {
+
+	@include screen-size(medium-screens) {@include span(6);}
+}
+
+.column-7 {
+
+	@include screen-size(medium-screens) {@include span(7);}
+}
+
+.column-8 {
+
+	@include screen-size(medium-screens) {@include span(8);}
+}
+
+.column-9 {
+
+	@include screen-size(medium-screens) {@include span(9);}
+}
+.column-10 {
+
+	@include screen-size(medium-screens) {@include span(10);}
+}
+.push-1 {
+	@include screen-size(medium-screens) {@include push(1);}
+}
+
+.push-2 {
+	@include screen-size(medium-screens) {@include push(2);}
+}
+
+.push-3 {
+	@include screen-size(medium-screens) {@include push(3);}
+}
+
+.push-4 {
+	@include screen-size(medium-screens) {@include push(4);}
+}
+
+.push-6 {
+	@include screen-size(medium-screens) {@include push(6);}
+}

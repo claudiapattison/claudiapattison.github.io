@@ -1,0 +1,20 @@
+.yellow {color:$tertiary-color;}
+
+.purple {color:$primary-color;}
+
+.center {text-align:center;}
+
+.contact-details {font-weight:400; letter-spacing:1.6px; color:$primary-color-alt;
+
+	a {color:$primary-color-alt; text-decoration:none;}
+}
+
+.disclaimer {padding-top:30px; padding-bottom:30px; text-align:center;
+
+	@include screen-size(medium-screens) {padding-top:60px; padding-bottom:60px;}
+
+	p {font-size:18px;
+
+		@include screen-size(small-screens) {font-size:22px;}
+	}
+}

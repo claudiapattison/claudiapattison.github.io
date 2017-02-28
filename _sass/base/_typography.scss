@@ -1,0 +1,93 @@
+$font-path-file-name:/assets/fonts;
+
+// font_name font
+@font-face {
+  font-family: brandon-bold;
+  src: url($font-path-file-name+'/brandon_bld-webfonteot'); /* IE9 Compat Modes */
+  src: url($font-path-file-name+'/brandon_bld-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url($font-path-file-name+'/brandon_bld-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url($font-path-file-name+'/brandon_bld-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url($font-path-file-name+'/brandon_bld-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url($font-path-file-name+'/brandon_bld-webfont.svg#font_name') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'brandon_grotesquemedium';
+    src: url($font-path-file-name+'/brandon_med-webfont.eot');
+    src: url($font-path-file-name+'/brandon_med-webfont.eot?#iefix') format('embedded-opentype'),
+         url($font-path-file-name+'/brandon_med-webfont.woff2') format('woff2'),
+         url($font-path-file-name+'/brandon_med-webfont.woff') format('woff'),
+         url($font-path-file-name+'/brandon_med-webfont.ttf') format('truetype'),
+         url($font-path-file-name+'/brandon_med-webfont.svg#brandon_grotesquemedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {font-family:$primary-font; font-size:16px; color:$text-color; -webkit-font-smoothing: antialiased;}
+
+h1, h2, h3, h4, h5, b, p, strong {margin:0; font-weight:normal;}
+
+.site-logo {font-family:$secondary-font; font-size:50px;}
+
+h1 {font-size:24px; line-height:30px; font-weight:$primary-font-light;}
+
+h2 {font-family:$tertiary-font; font-size:24px; text-transform:uppercase; color:$primary-color;
+
+    @include screen-size(medium-screens) {font-size:32px;}
+}
+
+h3 {font-size:18px; color:$primary-color;}
+
+p {font-weight:$primary-font-light;}
+
+strong, b {font-weight:$primary-font-bold;}
+
+.site-logo {font-size:30px;
+
+    @include screen-size(medium-screens) {font-size:50px;}
+}
+.rich-text {
+
+	h2 {margin-bottom:10px;}
+
+	p {margin-bottom:20px; line-height:25px;}
+
+    strong, b {color:$primary-color-alt;}
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url($font-path-file-name+'/icomoon.eot?313xsz');
+    src: url($font-path-file-name+'/icomoon.eot?313xsz#iefix') format('embedded-opentype'),
+         url($font-path-file-name+'/icomoon.ttf?313xsz') format('truetype'),
+         url($font-path-file-name+'/icomoon.woff?313xsz') format('woff'),
+         url($font-path-file-name+'/icomoon.svg?313xsz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-contact:before {
+  content: "\e900";
+}
+.icon-linkedin:before {
+  content: "\e901";
+}
+.icon-twitter:before {
+  content: "\e902";
+}

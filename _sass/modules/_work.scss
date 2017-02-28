@@ -1,0 +1,32 @@
+/*.work {display:flex;}
+
+.work-item-large {max-width:65%; max-height:500px; overflow:hidden;flex-grow:1;
+
+	img { transform: translateY(-40px);}
+}
+
+.work-side {display:flex; flex-direction:column; max-height:500px; flex-grow:1; align-items:center;}
+
+.work-item {padding:30px; flex-grow:1; flex-basis: 0; overflow:hidden;
+
+	img {@include vertical-align;}
+}*/
+
+.work {
+
+	@include screen-size(small-screens) {display:flex;}
+}
+
+.work-item {padding:20px; width:100%; min-height:320px; max-height:400px; align-self:stretch; display:flex; align-items:center; overflow:hidden;
+
+	@include screen-size(small-screens) {width:50%;}
+
+	&:nth-child(even){
+		 animation-delay: 0.2s;
+	}
+}
+
+
+.workamymakeup {background-color:#D9C5C1;}
+
+.workmachineshop {background-color:#91AA9D;}

@@ -1,0 +1,24 @@
+.capabilities {padding-top:40px; padding-bottom:20px;
+
+	@include screen-size(medium-screens) {padding-top:60px;}
+}
+
+.capabilities-list {
+
+	li {margin-bottom:20px;
+
+		@include screen-size(medium-screens) {margin-bottom:40px;}
+	}
+
+	img {float:left; margin-right:15px; margin-bottom:15px; max-width:70px;}
+
+	p {width:100%; overflow:hidden;
+
+		@include screen-size(medium-screens) {width:auto;}
+	}
+
+	h3 {padding-top:20px;
+
+		@include screen-size(medium-screens) {padding-top:0;}
+	}
+}

@@ -1,0 +1,26 @@
+.footer {padding-top:70px; padding-bottom:30px; background:$gradient; 
+
+	h1, h2, p, a {color:white;}
+
+	a {text-decoration:none;}
+
+	p:first-of-type {font-size:18px;}
+
+	.icon-contact {margin-bottom:20px; display:block; font-size:70px; color:white;}
+
+	hr {margin-top:20px; margin-bottom:20px; background-color:white;}
+}
+
+.footer-details {
+
+	@include screen-size(small-screens) {@include span(8); @include push(2);}
+}
+
+.social-media-list {display:block; margin-top:40px; margin-bottom:40px;
+
+	li {margin-right:10px; margin-left:10px; display:inline-block;}
+
+	span {font-size:20px;}
+}
+
+.footer-disclaimer {font-size:14px; line-height:14px;}

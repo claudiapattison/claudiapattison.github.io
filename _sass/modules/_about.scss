@@ -1,0 +1,13 @@
+.about-me {padding-bottom:40px; background-color:$grey-color-1;}
+
+.about-me-text {position:relative; z-index:1; margin-top:-20px; padding:30px; width:100%; background-color:white;
+
+	@include screen-size(small-screens) {width:90%; float:left; padding:50px;}
+	@include screen-size(medium-screens) {width:60%;}
+}
+
+.about-me-image {
+
+	@include screen-size(small-screens) {position:relative; margin-top:-160px; z-index:1; width:40%; float:right;}
+	@include screen-size(medium-screens) {margin-top:-40px; float:left;}
+}

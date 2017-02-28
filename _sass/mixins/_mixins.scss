@@ -1,0 +1,22 @@
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin screen-size($media) {
+    @if $media == xsmall-screens { //Min-Width 600px
+        @media only screen and (min-width:600px), print { @content; }
+    }
+    @else if $media == small-screens {  //Min-Width 768px
+        @media only screen and (min-width:768px), print { @content; }
+    }
+    @else if $media == medium-screens { //Min-Width 992px
+        @media only screen and (min-width:992px), print { @content; }
+    }
+    @else if $media == large-screens { //Min-Width 1200px
+        @media only screen and (min-width:1400px), print { @content; }
+    }
+}
