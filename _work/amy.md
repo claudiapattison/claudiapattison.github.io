@@ -1,6 +1,7 @@
 ---
 title: amy
 image_path: /assets/images/amymakeup.png
+image_path_highres: /assets/images/amymakeup.png
 class: workamymakeup
 date: 01-01-2014
 ---

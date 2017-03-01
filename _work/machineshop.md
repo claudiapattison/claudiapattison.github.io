@@ -1,6 +1,7 @@
 ---
 title: About
 image_path: /assets/images/machineshop.png
+image_path_highres: /assets/images/machineshop-highres.png
 class: workmachineshop
 date: 06-01-2016
 ---

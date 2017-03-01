@@ -55,7 +55,7 @@ layout: default
     {% assign items = (site.work | sort: 'date') | reverse %}
     {% for item in items limit:6 %}
         <div class="work-item {{ item.class }}">
-            <img src="{{ item.image_path }}" alt="{{ item.title }}" class="work-item-img" />
+            <img src="{{ item.image_path }}" srcset="{{ item.image_path }} 1x, {{ item.image_path_highres }} 2x" alt="{{ item.title }}" class="work-item-img" />
         </div>
     {% endfor %}
 </section>
