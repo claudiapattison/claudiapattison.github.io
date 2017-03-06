@@ -4,17 +4,16 @@
 
 .center {text-align:center;}
 
-.contact-details {font-weight:400; letter-spacing:1.6px; color:$primary-color-alt;
+.contact-details {font-family:$secondary-font; font-weight:$secondary-font-light; color:$primary-color;
 
-	a {color:$primary-color-alt; text-decoration:none;}
+	a {color:$primary-color; text-decoration:none;}
 }
 
-.disclaimer {padding-top:30px; padding-bottom:30px; text-align:center;
+.summary {font-size:20px;}
 
-	@include screen-size(medium-screens) {padding-top:60px; padding-bottom:60px;}
+.img-border {border:20px solid $grey-color-1;
 
-	p {font-size:18px;
-
-		@include screen-size(small-screens) {font-size:22px;}
-	}
+	@include screen-size(medium-screens) {border:60px solid $grey-color-1;}
 }
+
+.content {padding-top:60px; padding-bottom:60px;}

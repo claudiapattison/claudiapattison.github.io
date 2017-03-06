@@ -4,13 +4,13 @@
  
   {% include head.html %}
 
-  <body>
-    {{ content }}
+  <body class="{% if page.layout == 'home' %}home{% else %}work{% endif %}">
+    {% include header.html %}
+    <main>
+      {{ content }}
+    </main>
     {% include footer.html %}
     <script src="/assets/js/jquery-3.1.1.min.js"></script>
-	<script src="/assets/js/anime.min.js"></script>
-	<script src="/assets/js//imagesloaded.pkgd.min.js"></script>
-	<script src="/assets/js/banner.js"></script>
 	<script src="/assets/js/jquery.viewportchecker.min.js"></script>
 	<script src="/assets/js/global.js"></script>
   </body>

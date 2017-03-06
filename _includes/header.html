@@ -1,19 +1,19 @@
 <header class="site-header" role="banner">
-    <div class="container">
-        <div class="logo">
-            <img src="" alt="{{ site.title | escape }}">
-        </div>
-        <div class="main-navigation">
-            <nav>
-                <ul>
-                    {% for my_page in site.pages %}
-                        {% if my_page.title %}
-                        <li><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </nav>
-        </div>
+    <div class="logo">
+        <a href="/">
+            <h1 class="site-logo">CLAUDIA <span class="yellow">PATTISON</span></h1>
+            <span class="job-title">Designer & Front End Developer</span>
+        </a>
+    </div>
+    <div class="main-navigation" id="main-navigation">
+        <nav>
+            <ul>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#capabilities">Capabilities</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 

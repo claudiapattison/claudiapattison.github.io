@@ -1,17 +1,20 @@
 ---
-title: About
-image_path: /assets/images/machineshop.png
-image_path_highres: /assets/images/machineshop-highres.png
-class: workmachineshop
+layout: work
+permalink: /machineshop/
+title: Machine Shop
+image_path: /assets/images/machineshop/machineshop.jpg
+image_path_highres: /assets/images/machineshop/machineshop-highres.jpg
+
+image_path_device: /assets/images/machineshop/device.jpg
+image_path_device_highres: /assets/images/machineshop/device-highres.jpg
+
+banner_summary: Machine Shop supplies Special Effects services and Special Effects Hire for TV, Films and Commercials. The old website needed a major redesign and all the content needed to be placed in a content management system.
+banner_skills: Web Design, Front End Development, Umbraco CMS
+banner_url: www.machineshop.co.uk
+
 date: 06-01-2016
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+<img src="/assets/images/machineshop/page-img1.jpg" class="img-border">
+<img src="/assets/images/machineshop/page-img2.jpg">
+<img src="/assets/images/machineshop/page-img3.jpg" class="img-border">

@@ -17,6 +17,6 @@
         @media only screen and (min-width:992px), print { @content; }
     }
     @else if $media == large-screens { //Min-Width 1200px
-        @media only screen and (min-width:1400px), print { @content; }
+        @media only screen and (min-width:1200px), print { @content; }
     }
 }

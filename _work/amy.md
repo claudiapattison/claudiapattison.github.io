@@ -1,17 +1,17 @@
 ---
-title: amy
-image_path: /assets/images/amymakeup.png
-image_path_highres: /assets/images/amymakeup.png
-class: workamymakeup
+layout: work
+permalink: /amylouisemakeup/
+title: Amy Louise Makeup
+image_path: /assets/images/amymakeup/amymakeup.jpg
+image_path_highres: /assets/images/amymakeup/amymakeup-highres.jpg
+
+image_path_device{: /assets/images/amymakeup/device-highres.jpg
+image_path_device_highres: /assets/images/amymakeup/device-highres.jpg
+
+banner_summary: Amy Louise is a freelance makeup artist. The client needed a rebrand, a new website redesigned and content management system to update content easily. 
+banner_skills: Branding, Web Design, Front End Development, Wordpress CMS
+
 date: 01-01-2014
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+<img src="/assets/images/amymakeup/page-img1.jpg" class="img-border">

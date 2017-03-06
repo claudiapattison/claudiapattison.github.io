@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="project-page-banner">
+	<div class="project-page-banner-img" style="background-image:url('{{ page.image_path_highres }}');">
+	</div>
+	<div class="container project-page-banner-text">
+
+		<div class="column-6">
+			<h1>{{ page.title }}</h1>
+		</div>
+		<div class="column-6 rich-text">
+			<p class="summary">{{ page.banner_summary }}</p>
+			<p><i>{{ page.banner_skills }}</i></p>
+			<p><a href="http://{{ page.banner_url }}" target="_blank">{{ page.banner_url }}</a></p>
+		</div>
+	</div>
+</div>
+<section class="content">
+	<div class="container">
+		{{ content }}
+	</div>
+</section>

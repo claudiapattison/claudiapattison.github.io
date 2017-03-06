@@ -1,4 +1,6 @@
-.footer {padding-top:70px; padding-bottom:30px; background:$gradient; 
+.footer {padding-top:30px; padding-bottom:30px; background:$gradient; 
+
+	@include screen-size(medium-screens) {padding-top:70px; }
 
 	h1, h2, p, a {color:white;}
 

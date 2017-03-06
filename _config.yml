@@ -36,3 +36,4 @@ sass:
 
 collections:
   work:
+    output: true

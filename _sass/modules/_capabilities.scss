@@ -10,14 +10,14 @@
 		@include screen-size(medium-screens) {margin-bottom:40px;}
 	}
 
-	img {float:left; margin-right:15px; margin-bottom:15px; max-width:70px;}
+	span {float:left; margin-right:15px; margin-bottom:25px; font-size:60px; color:$primary-color;}
 
 	p {width:100%; overflow:hidden;
 
 		@include screen-size(medium-screens) {width:auto;}
 	}
 
-	h3 {padding-top:20px;
+	h3 {padding-top:13px;
 
 		@include screen-size(medium-screens) {padding-top:0;}
 	}

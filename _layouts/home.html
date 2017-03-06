@@ -1,31 +1,59 @@
 ---
 layout: default
 ---
-<section class="banner">
-    <div class="segmenter" style="background-image: url('/assets/images/banner.jpg')"></div>
-    <div class="container">
-        <div class="banner-text column-8 push-2">
-            <span class="site-logo">CLAUDIA <span class="yellow">PATTISON</span></span>
-            <h1>Freelance Web Designer and Front End Developer based in Bicester, Oxfordshire</h1>
+<section>
+    <div class="banner" style="background-image: url('/assets/images/banner.jpg')">
+        <div class="container">
+            <div class="banner-text column-8 push-2">
+                <span class="site-logo">CLAUDIA <span class="yellow">PATTISON</span></span>
+                <h1>Freelance Web Designer and Front End Developer based in Bicester, Oxfordshire</h1>
+            </div>
+        </div>
+    </div>
+    <div class="about-me" id="about">
+        <div class="container">
+            <div class="about-me-text rich-text">
+                <h2>Hello, I'm Claudia</h2>
+                <p>A freelance web designer specialising in web design and front end development. I thrive on perfection and the little details on a website. I have 5 years commercial experience in the industry and have designed and developed websites for many different companies, big and small. </p>
+                <p>I offer a broad range of web design services from exceptional designs to CMS integration. I start each new project from scratch, from the design process to the build of the web site so each website is tailored to you. </p>
+                <p>Need a website? Please get in touch.</p>
+                <p class="contact-details">Email: <a href="mailto:pattisonclaudia@gmail.com">pattisonclaudia@gmail.com</a><br />
+                Phone: 07450 995429</p>
+            </div>
+            <div class="about-me-image">
+                <img src="/assets/images/claudia.jpg" srcset="/assets/images/claudia.jpg 1x, /assets/images/claudia-highres.jpg 2x" alt="Claudia Pattison">
+            </div>
         </div>
     </div>
 </section>
-<section class="about-me">
+<section class="projects" id="projects">
     <div class="container">
-        <div class="about-me-text rich-text">
-            <h2>HELLO, I’M CLAUDIA</h2>
-            <p>A freelance web designer specialising in web design and front end development. I thrive on perfection and the little details on a website. I have 5 years commerical experience in the industry and have designed and developed websites for many different companies, big and small. </p>
-            <p>I offer a broad range of web design services from expectial designs to CMS intergration. I start each new project from scratch, from the design process to the build of the web site so each website is tailored to you. </p>
-            <p>Need a website? Please get in touch.</p>
-            <p class="contact-details">Email: <a href="mailto:pattisonclaudia@gmail.com">pattisonclaudia@gmail.com</a><br />
-            Phone: 07450 995429</p>
+    {% assign items = (site.work | sort: 'date') | reverse %}
+    {% for item in items limit:6 %}
+        <div class="project-item">
+            <a href="{{ item.url }}" class="project-img">
+                <figure>
+                    <img src="{{ item.image_path_device }}" srcset="{{ item.image_path_device }} 1x, {{ item.image_path_device_highres }} 2x" alt="{{ item.title }}" class="project-device-img"/>
+                    <img src="{{ item.image_path }}" srcset="{{ item.image_path }} 1x, {{ item.image_path_highres }} 2x" alt="{{ item.title }}" >
+                </figure>
+            </a>
+            <div class="project-info">
+                <h2 class="project-title">{{ item.title }}</h2>
+                <a href="{{ item.url }}" class="link">View Project <span class="icon-arrow-right"></span></a>
+            </div>
         </div>
-        <div class="about-me-image">
-            <img src="/assets/images/claudia.jpg" srcset="/assets/images/claudia.jpg 1x, /assets/images/claudia-highres.jpg 2x" alt="Claudia Pattison">
-        </div>
+    {% endfor %}
     </div>
 </section>
-<section class="capabilities">
+<div class="projects-disclaimer">
+    <div class="container">
+        <div class="column-8 push-2">
+            <p>Due to contracts, I can not show all my work on my portfolio website. Please contact me for more information on projects I have worked on.</p>
+        </div>
+    </div>
+</div>
+
+<section class="capabilities" id="capabilities">
     <div class="container">
         <div class="column-4 rich-text">
             <h2>Capabilities</h2>
@@ -33,36 +61,21 @@ layout: default
         <div class="column-8 rich-text">
             <ul class="capabilities-list">
                 <li>    
-                    <img src="/assets/images/icon-design.svg" alt="Web Design">
+                    <span class="icon-design"></span>
                     <h3>Web Design</h3>
                     <p>I design easy to use user interfaces which are clean and engaging using latest web design trends and techniques. I make sure the most important information stands out on the website. Each design is bespoke and tailored to your needs. I make sure the design looks great on any sized device, from mobile to desktop, creating a multi device experience. </p>
                 </li>
                 <li>
-                    <img src="/assets/images/icon-development.svg" alt="Web Development">
+                    <span class="icon-development"></span>
                     <h3>Front End Development</h3>
-                    <p>The development phase is when the design comes to life. I build sites that not only good, but are coded and perform at the highest standard. I thrieve for the fine details, responsively coded so sites look great on all devices and subtle transition’s and animations to make the website come to life. Websites are coded to web standards and throughly tested on mutiple devices. </p>
+                    <p>The development phase is when the design comes to life. I build sites that not only good, but are coded and perform at the highest standard. I thrive for the fine details, responsively coded so sites look great on all devices and subtle transition’s and animations to make the website come to life. Websites are coded to web standards and throughly tested on multiple devices. </p>
                 </li>
                 <li>
-                    <img src="/assets/images/icon-cms.svg" alt="CMS Intergration">
-                    <h3>CMS Intergration </h3>
-                    <p>Having a website in a content management system is essential. The benefits in having a website in a CMS is it allows the user to easily add and edit pages on their site, without the need of a developer. I specilise in creating websites in the popular content management system Umbraco and I am a <strong>Umbraco Certified Developer (Level 1)</strong>.</p>
+                    <span class="icon-browser"></span>
+                    <h3>CMS Integration </h3>
+                    <p>Having a website in a content management system is essential. The benefits in having a website in a CMS is it allows the user to easily add and edit pages on their site, without the need of a developer. I specialise in creating websites in the popular content management system Umbraco and I am a <strong>Umbraco Certified Developer (Level 1)</strong>.</p>
                 </li>
             </ul>
         </div>
     </div>  
 </section>
-<section class="work">
-    {% assign items = (site.work | sort: 'date') | reverse %}
-    {% for item in items limit:6 %}
-        <div class="work-item {{ item.class }}">
-            <img src="{{ item.image_path }}" srcset="{{ item.image_path }} 1x, {{ item.image_path_highres }} 2x" alt="{{ item.title }}" class="work-item-img" />
-        </div>
-    {% endfor %}
-</section>
-<div class="disclaimer">
-    <div class="container">
-        <div class="column-8 push-2">
-            <p>Due to contracts, I can not show all work with clients on my portfolio website. Please contact me for more information on projects I have worked on.</p>
-        </div>
-    </div>
-</div>
