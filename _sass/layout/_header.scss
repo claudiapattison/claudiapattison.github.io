@@ -9,7 +9,9 @@
 	.job-title {font-family:$secondary-font; font-weight:$secondary-font-light; color:white;}
 }
 
-.main-navigation {@include span(6);
+.main-navigation {display:none; @include span(6);
+
+	@include screen-size(medium-screens) {display:block;}
 
 	ul {margin-top:20px;font-family:$secondary-font; font-weight:$secondary-font-light; text-align:right;}
 
